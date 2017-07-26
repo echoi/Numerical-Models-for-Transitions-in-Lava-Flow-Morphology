@@ -97,7 +97,7 @@ subsection Material model
         set Thermal expansivities                     = 2e-5, 2e-5
         set Viscosity averaging scheme                = maximum composition
         set Viscous flow law                          = dislocation
-        set Prefactors for dislocation creep          = 1e-2, 10.0
+        set Prefactors for dislocation creep          = 1e-2, 1.0
         set Stress exponents for dislocation creep    = 1.0, 1.0
         set Activation energies for dislocation creep = 0.0, 0.0
         set Activation volumes for dislocation creep  = 0.0, 0.0
@@ -111,7 +111,10 @@ end
 subsection Mesh refinement
   set Initial adaptive refinement        = 0
   set Initial global refinement          = 5
-  set Time steps between mesh refinement = 0
+  set Minimum refinement level           = 4
+  set Refinement fraction                = 0.5
+  set Strategy                           = viscosity
+  set Time steps between mesh refinement = 5
 end
 
 
