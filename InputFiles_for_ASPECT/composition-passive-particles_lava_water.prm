@@ -109,10 +109,11 @@ end
 
 
 subsection Mesh refinement
-  set Initial adaptive refinement        = 0
+  set Initial adaptive refinement        = 4
   set Initial global refinement          = 5
-  set Minimum refinement level           = 4
+  set Minimum refinement level           = 5
   set Refinement fraction                = 0.5
+  set Coarsening fraction                = 0.3
   set Strategy                           = viscosity
   set Time steps between mesh refinement = 5
 end
